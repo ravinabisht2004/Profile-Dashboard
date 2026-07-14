@@ -50,7 +50,7 @@ export default function Navbar() {
       )}
      </div>
 
-     <button className='mt-20 p-2 text-purple-800 flex gap-5 border-2 border-b-fuchsia-700 rounded-xl hover:bg-purple-950 hover:text-white'><span><ArrowDownToLine /></span><span>Download Resume</span></button>
+     <button className='mt-20 p-2 text-purple-800 flex gap-5 border-2 border-b-fuchsia-700 rounded-xl hover:bg-purple-950 hover:text-white '><span><ArrowDownToLine /></span><span>Download Resume</span></button>
 
       <div>
         <Contact/>
