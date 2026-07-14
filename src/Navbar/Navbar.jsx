@@ -34,7 +34,7 @@ export default function Navbar() {
     
     <div>
       <div className="flex items-center">
-        <h1 className="text-white text-2xl font-bold  bg-gradient-to-r from-blue-700 to-purple-800 p-2 rounded-xl mr-3">RB</h1>
+        <h1 className="text-white text-2xl font-bold  bg-linear-to-r from-blue-700 to-purple-800 p-2 rounded-xl mr-3">RB</h1>
         <div className="flex flex-col  text-white">
             <span className="font-semibold">Ravina Bisht</span>
             <span className=" text-sm font-semibold text-blue-500">Developer Portfolio</span>
