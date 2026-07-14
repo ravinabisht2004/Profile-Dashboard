@@ -1,10 +1,11 @@
 import React from 'react'
 import {User,MoveRight} from 'lucide-react'
+import Skills from './Skills'
 
 export default function About() {
   return (
-    <>
-    <div className='p-2 mt-10 border-2 border-purple-500 w-fit h-80 rounded-2xl'>
+    <div className='p-2 mt-10 flex gap-25'>
+    <div className='p-3 border-2 border-purple-500 w-fit h-80 rounded-2xl'>
       <div className='flex items-center gap-5'>
         <div><User strokeWidth={3} size={40} color='blue' /></div>
         <div className='font-bold text-2xl'>About Me</div>
@@ -19,6 +20,9 @@ export default function About() {
       </div>
       <div className='flex mt-5 ml-3 rounded-md border-2 border-purple-500 w-fit p-2 gap-2 text-purple-600'>Know More About Me <span><MoveRight /></span></div>
     </div>
-    </>
+    <div>
+        <Skills/>
+    </div>
+    </div>
   )
 }
