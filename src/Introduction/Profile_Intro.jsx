@@ -1,0 +1,91 @@
+import React from 'react'
+import {Dot, MapPin,Phone,Mail,ArrowDownToLine} from 'lucide-react'
+import { FaLinkedin  } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
+
+export default function Profile_Intro() {
+
+    const contact = [
+        {
+            icon : <MapPin size={18}/>,
+            title: "Delhi, India |",
+        }, 
+        {
+            icon : <Mail size={18}/>,
+            title: "ravinabisht2003@gmail.com |",
+        }, 
+        {
+            icon : <Phone  size={18}/>,
+            title: "9354444031",
+        },
+        
+    ]
+
+    const socialMedia = [
+        {
+            icon : <ArrowDownToLine />,
+            title: "View Resume", 
+        }, 
+        {
+            icon : <FaGithubSquare />,
+            title: "GitHub", 
+        }, 
+        {
+            icon : <FaLinkedin />,
+            title: "Linkedin", 
+        }, 
+        {
+            icon : <Mail size={18}/>,
+            title: "Email", 
+        }, 
+
+    ]
+
+  return (
+    <div className='w-300 flex flex-col'>
+      
+      <div className='text-green-300 flex font-bold items-center fixed right-0  border-2 text-xs pl-2 pr-2 border-green-500 rounded-md '> <Dot size={25} /> Available for internship</div>
+
+    <div className='mt-5 flex gap-10'>
+        <div >
+            <img className='rounded-full object-contain w-40 h-40' src="https://img.joomcdn.net/ad91defa296fbdeb1ba5b50b8d7214f20e5eba2d_original.jpeg" alt="" />
+        </div>
+        <div className='p-2'>
+            <div className='text-xl'>Hi, I'm</div>
+            <div className='text-3xl font-bold'>Ravina Bisht</div>
+            <div className='mt-3 mb-1 flex text-xl'>
+                <div className='text-purple-600'>MCA Student |</div>                
+                <div className='text-blue-600'> Aspiring Software Developer</div> 
+            </div>
+            <div className='text-gray-300 text-sm'>
+                Passionate about building efficient, user-friendly web applications <br/>
+                and solving real-world problem through code. 
+            </div>
+            <div className='flex'>
+                
+                {contact.map((key,index)=>
+                <div key={index} className='flex mt-2 text-sm items-center'>
+                    <div >{key.icon}</div>
+                    <div className='ml-1 mr-2'>{key.title}</div>
+                 </div>   
+                    
+                )}
+            </div>
+
+             <div className='flex'>
+                
+                {socialMedia.map((key,index)=>
+                <div key={index} className='flex mt-2 text-sm items-center'>
+                    <div >{key.icon}</div>
+                    <div className='ml-1 mr-2'>{key.title}</div>
+                 </div>   
+                    
+                )}
+            </div>
+        </div>
+    </div>
+      
+
+    </div>
+  )
+}
