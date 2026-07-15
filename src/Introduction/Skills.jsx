@@ -14,12 +14,6 @@ import { FaGithub } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
 
 
-
-
-
-
-
-
 export default function Skills() {
   const Skills = [
     { icon: <IoLogoHtml5 color="Red" size={30}/>,
@@ -87,7 +81,7 @@ export default function Skills() {
         <div className="grid grid-cols-3 gap-2">
           {Skills.map((Key, index) => (
             
-            <div className="flex items-center mt-3 gap-2 border-1 border-gray-700 rounded-md p-2 ">
+            <div className="flex items-center mt-3 gap-2 border-2 border-gray-700 rounded-md p-2 ">
               <div>{Key.icon}</div>
               <div className="text-sm">{Key.title}</div>
             </div>
