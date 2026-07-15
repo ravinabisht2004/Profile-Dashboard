@@ -3,6 +3,7 @@ import { Dot, MapPin, Phone, Mail, ArrowDownToLine } from 'lucide-react'
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
 import About from './About';
+import Project from '../Project/Project';
 
 export default function Profile_Intro() {
 
@@ -93,6 +94,7 @@ export default function Profile_Intro() {
             <div>
                 <About/>
             </div>
+            <div><Project/></div>
         </div>
     );
 }
