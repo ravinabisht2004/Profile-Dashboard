@@ -18,7 +18,7 @@ export default function About() {
         technologies and turning idea into real-world <br/>
         solutions.
       </div>
-      <div className='flex mt-5 ml-3 rounded-md border-2 border-purple-500 w-fit p-2 gap-2 text-purple-600'>Know More About Me <span><MoveRight /></span></div>
+      <div className='flex mt-5 ml-3 rounded-md border-2 cursor-pointer border-purple-500 w-fit p-2 gap-2 text-purple-600'>Know More About Me <span><MoveRight /></span></div>
     </div>
     <div>
         <Skills/>

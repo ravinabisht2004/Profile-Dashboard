@@ -26,7 +26,7 @@ import { MdEmail } from "@react-icons/all-files/md/MdEmail";
     
     <div className='text-white p-2 mt-5'>
       <div className='text-xl mb-2'>Let's Connect</div>
-        <div className='flex  gap-3 '>
+        <div className='flex  gap-3 cursor-pointer '>
             {contact.map((key,index) =>
             <span key={index} className= 'text-white text-2xl border-2 p-1 rounded-md' >{key.icon}</span>
       )}

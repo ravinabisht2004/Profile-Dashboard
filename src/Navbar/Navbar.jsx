@@ -41,7 +41,7 @@ export default function Navbar() {
         </div>
       </div>
 
-     <div className='text-white mt-9'>
+     <div className='text-white mt-9 '>
       {navabarIcon.map((key,index)=>
         <div key={index} className='flex p-2 mt-4 w-40 gap-5 cursor-pointer hover:bg-blue-800 rounded-xs duration-300  hover:translate-x-2 '>
           <div>{key.icon}</div>
@@ -50,7 +50,7 @@ export default function Navbar() {
       )}
      </div>
 
-     <button className='mt-20 p-2 text-purple-800 flex gap-5 border-2 border-b-fuchsia-700 rounded-xl hover:bg-purple-950 hover:text-white '><span><ArrowDownToLine /></span><span>Download Resume</span></button>
+     <button className='mt-20 p-2 cursor-pointer text-purple-800 flex gap-5 border-2 border-b-fuchsia-700 rounded-xl hover:bg-purple-950 hover:text-white '><span><ArrowDownToLine /></span><span>Download Resume</span></button>
 
       <div>
         <Contact/>

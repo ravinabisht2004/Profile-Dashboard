@@ -12,7 +12,7 @@ export default function Skills() {
 
   return (
     <div className="p-3 border-2 border-purple-500 w-fit h-80 rounded-2xl">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 ">
         <div>
           <ChevronsLeftRight color="purple" size={30} />
         </div>

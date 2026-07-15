@@ -45,7 +45,7 @@ export default function Profile_Intro() {
     return (
         <div className='w-300 flex flex-col pl-2 pr-2'>
 
-            <div className='text-green-300 flex font-bold items-center fixed right-0  border-2 text-xs  border-green-500 rounded-md '> <Dot size={25} /> Available for internship</div>
+            <div className='text-green-300 flex font-bold items-center fixed right-0  border-2 text-xs  border-green-500 rounded-md pr-2 '> <Dot size={25} /> Available for internship</div>
 
             <div className='mt-5 flex gap-10'>
                 <div >
