@@ -8,13 +8,21 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { DiNodejs } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
+import { SiMongodb } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { VscVscode } from "react-icons/vsc";
+
+
+
+
 
 
 
 
 export default function Skills() {
   const Skills = [
-    { icon: <IoLogoHtml5 color="orange" size={30}/>,
+    { icon: <IoLogoHtml5 color="Red" size={30}/>,
       title: "HTML" 
     },
     {
@@ -45,6 +53,23 @@ export default function Skills() {
       icon: <GrMysql   size={30}/>,
       title:"My Sql"
     },
+    {
+      icon: <SiMongodb  color="green"  size={30}/>,
+      title:"MongoDB"
+    },
+    {
+      icon: <FaGitAlt   color="red"  size={30}/>,
+      title:"Git"
+    },
+   {
+      icon: <FaGithub   size={30}/>,
+      title:"GitHub"
+    },
+    {
+      icon: <VscVscode color="blue"   size={30}/>,
+      title:"VS Code"
+    },
+
 
 
 
@@ -62,9 +87,9 @@ export default function Skills() {
         <div className="grid grid-cols-3 gap-2">
           {Skills.map((Key, index) => (
             
-            <div className="flex items-center mt-3 gap-2 ">
+            <div className="flex items-center mt-3 gap-2 border-1 border-gray-700 rounded-md p-2 ">
               <div>{Key.icon}</div>
-              <div>{Key.title}</div>
+              <div className="text-sm">{Key.title}</div>
             </div>
             
           ))}
