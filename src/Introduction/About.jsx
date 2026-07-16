@@ -5,7 +5,7 @@ import Skills from './Skills'
 export default function About() {
   return (
     <div className='p-2 mt-10 flex gap-25'>
-    <div className='p-3 border-2 border-gray-800 w-fit h-80 rounded-2xl'>
+    <div className='p-3 border-2 border-gray-800 w-110 h-80 rounded-2xl'>
       <div className='flex items-center gap-5'>
         <div><User strokeWidth={3} size={40} color='blue' /></div>
         <div className='font-bold text-2xl'>About Me</div>

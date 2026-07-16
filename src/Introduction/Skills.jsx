@@ -70,7 +70,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="p-3 border-2 border-gray-800 w-fit h-80 rounded-2xl">
+    <div className="p-3 border-2 border-gray-800 w-120 h-80 rounded-2xl">
       <div className="flex items-center gap-2 ">
         <div>
           <ChevronsLeftRight color="purple" size={30} />
@@ -81,7 +81,7 @@ export default function Skills() {
         <div className="grid grid-cols-3 gap-2">
           {Skills.map((Key, index) => (
             
-            <div className="flex items-center mt-3 gap-2 border-2 border-gray-700 rounded-md p-2 ">
+            <div className="flex items-center mt-3 gap-2 border-2 border-gray-700 rounded-md p-2 ">{Key.index}
               <div>{Key.icon}</div>
               <div className="text-sm">{Key.title}</div>
             </div>
